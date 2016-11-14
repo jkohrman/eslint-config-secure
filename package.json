@@ -35,7 +35,6 @@
     "email": "jeff.kohrman@gmail.com",
     "url": "https://jkohrman.github.io"
   },
-  "registry": "
   "homepage": "https://github.com/jkohrman/eslint-config-secure#readme",
   "devDependencies": {
     "eslint": "^3.10.0",
