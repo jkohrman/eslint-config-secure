@@ -1,0 +1,17 @@
+---
+machine:
+  node:
+    version: 6.0.0
+dependencies:
+  override:
+    - npm install
+test:
+  override:
+    - npm run snyk
+    - npm run nsp
+    - npm run retire
+    - npm run lint
+    - npm run test
+    - npm run cover
+  post:
+    - bash <(curl -s https://codecov.io/bash)
