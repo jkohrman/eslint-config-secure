@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-secure",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A shareable ESLint config with code security plugins",
   "main": "index.js",
   "scripts": {
@@ -47,6 +47,11 @@
     "retire": "^1.2.10",
     "snyk": "^1.19.1",
     "tape": "^4.6.2"
+  },
+  "dependencies": {
+    "eslint": ">=3.10.0",
+    "eslint-plugin-no-unsafe-innerhtml": ">=1.0.15",
+    "eslint-plugin-scanjs-rules": ">=0.1.4"
   },
   "peerDependencies": {
     "eslint": ">=3.10.0",
