@@ -10,7 +10,8 @@
     "retire": "retire",
     "cover": "istanbul cover -- **/*.spec.js",
     "lint": "node_modules/eslint/bin/eslint.js -c .eslintrc.js .",
-    "test": "NODE_ENV=test tape tests/**/*.spec.js"
+    "test": "NODE_ENV=test tape tests/**/*.spec.js",
+    "npmpublish": "publish"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "eslint-plugin-scanjs-rules": "^0.1.4",
     "istanbul": "^0.4.5",
     "nsp": "^2.6.2",
+    "publish": "^0.6.0",
     "retire": "^1.2.10",
     "snyk": "^1.19.1",
     "tape": "^4.6.2"
