@@ -41,6 +41,7 @@
     "eslint": "^3.10.0",
     "eslint-plugin-no-unsafe-innerhtml": "^1.0.15",
     "eslint-plugin-scanjs-rules": "^0.1.4",
+    "eslint-plugin-security": "^1.2.0",
     "istanbul": "^0.4.5",
     "nsp": "^2.6.2",
     "publish": "^0.6.0",
@@ -51,12 +52,14 @@
   "dependencies": {
     "eslint": ">=3.10.0",
     "eslint-plugin-no-unsafe-innerhtml": ">=1.0.15",
-    "eslint-plugin-scanjs-rules": ">=0.1.4"
+    "eslint-plugin-scanjs-rules": ">=0.1.4",
+    "eslint-plugin-security": ">=1.2.0"
   },
   "peerDependencies": {
     "eslint": ">=3.10.0",
     "eslint-plugin-no-unsafe-innerhtml": ">=1.0.15",
-    "eslint-plugin-scanjs-rules": ">=0.1.4"
+    "eslint-plugin-scanjs-rules": ">=0.1.4",
+    "eslint-plugin-security": ">=1.2.0"
   },
   "license": "MIT"
 }
