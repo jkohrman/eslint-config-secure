@@ -16,7 +16,8 @@ module.exports = {
   },
   "plugins": [
     "scanjs-rules",
-    "no-unsafe-innerhtml"
+    "no-unsafe-innerhtml",
+    "security"
   ],
   "rules": {
     /* Restrict unsafe inner html */
@@ -72,6 +73,19 @@ module.exports = {
     "scanjs-rules/property_lastKnownNetwork": 1,
     "scanjs-rules/property_localStorage": 1,
     "scanjs-rules/property_mgmt": 1,
-    "scanjs-rules/property_sessionStorage": 1
+    "scanjs-rules/property_sessionStorage": 1,
+
+    "security/detect-unsafe-regex": 1,
+    "security/detect-buffer-noassert": 1,
+    "security/detect-child-process": 1,
+    "security/detect-disable-mustache-escape": 1,
+    "security/detect-eval-with-expression": 1,
+    "security/detect-no-csrf-before-method-override": 1,
+    "security/detect-non-literal-fs-filename": 1,
+    "security/detect-non-literal-regexp": 1,
+    "security/detect-non-literal-require": 1,
+    "security/detect-object-injection": 1,
+    "security/detect-possible-timing-attacks": 1,
+    "security/detect-pseudoRandomBytes": 1
   }
 }
