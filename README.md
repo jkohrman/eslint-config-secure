@@ -11,24 +11,30 @@ _An ESLint [Shareable Config](https://eslint.org/docs/developer-guide/shareable-
 This module checks for basic security issues in your Javascript.  It includes plugins recommended by 18F, [listed here](https://pages.18f.gov/before-you-ship/security/static-analysis/#javascript).  
   
   
-### Usage  
+## Usage  
   
 Shareable configs are designed to work with the ESLint `extends` feature.  
   
 Learn more about [Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs) on the official ESLint website.  
   
 1. Add the package to your `package.json` file:  
-  ```bash
-  $ npm install --save-dev eslint-config-secure
-  ```
-2. Add this line to your `.eslintrc` file:  
-  ```
-  {
-    "extends": "eslint-config-secure"
+   ```
+   $ npm install --save-dev eslint eslint-config-secure
+   ```  
+2. Add this _eslintConfig_ and _npm script_ configuration to your `package.json` file:  
+```
+{
+  "name": "my-super-package",
+  "eslintConfig": {
+    "extends": "secure"
   }
-  ```  
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ."
+  }
+}
+```  
   
-You can override settings from this config by adding them directly to your `.eslintrc` file.  
+You can override settings from this config by adding them directly to your `.eslintrc` or `package.json` file.  
   
   
 ## License  
